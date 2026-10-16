@@ -1,4 +1,4 @@
-# Frontend Assignment
+# Frontend
 
 Responsive, mobile-first feature showcase built with React, TypeScript, Tailwind CSS and Framer Motion.
 
