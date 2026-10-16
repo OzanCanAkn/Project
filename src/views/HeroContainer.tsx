@@ -7,7 +7,7 @@ const HeroContainer = () => {
   const [activeId, setActiveId] = useState<BannerId>('documentScanner');
   return (
     <div className="flex flex-col w-full items-center">
-      <div className="flex flex-col w-[100vw] !max-w-[1440px] h-screen justify-center">
+      <div className="flex flex-col w-full max-w-[1440px] h-screen supports-[height:100dvh]:h-dvh justify-center">
         <div className="flex items-center justify-center">
           <Hero activeId={activeId} />
         </div>

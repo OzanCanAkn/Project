@@ -1,22 +1,19 @@
 import clsx from 'clsx';
-import { NavLink } from '../../constants/navLinks';
+import type { NavLink } from '../../constants/navLinks';
 import CircularLoadingBar from '../CircularLoadingBar';
 
-const NavItem = ({
-  link,
-  isActive,
-  onActivate,
-  noBorder,
-}: {
+interface NavItemProps {
   link: NavLink;
   isActive: boolean;
   onActivate: () => void;
   noBorder: boolean;
-}) => {
+}
+
+const NavItem = ({ link, isActive, onActivate, noBorder }: NavItemProps) => {
   return (
     <a
       className={clsx(
-        'flex snap-center flex-nowrap text-nowrap items-center max-lg:!w-[300px] max-lg:min-w-[300px] justify-center py-4 gap-4',
+        'flex snap-center flex-nowrap whitespace-nowrap items-center max-lg:w-[300px] max-lg:min-w-[300px] justify-center py-4 gap-4',
         noBorder ? 'border-none' : 'border-l border-gray-200',
         isActive && 'bg-blue-100/20',
       )}
