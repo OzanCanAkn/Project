@@ -22,7 +22,7 @@ const CircularLoadingBar = ({ isActive, children }: CircularLoadingBarProps) => 
           cy={CENTER}
           r={RING_RADIUS}
           fill="none"
-          className="stroke-gray-300"
+          className="stroke-black/10"
           strokeWidth="1"
         />
       </svg>

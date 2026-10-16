@@ -26,7 +26,7 @@ const NavItem = ({
                 <span
                     role="img"
                     aria-label={link.label}
-                    className={clsx('block h-8 w-8', isActive ? 'bg-blue-500' : 'bg-black')}
+                    className={clsx('block h-8 w-8', isActive ? 'bg-action' : 'bg-muted')}
                     style={{
                         maskImage: `url(${link.icon})`,
                         WebkitMaskImage: `url(${link.icon})`,
@@ -40,7 +40,7 @@ const NavItem = ({
                     }}
                 />
             </CircularLoadingBar>
-            <h1>{link.label}</h1>
+            <p className="text-xl font-medium">{link.label}</p>
         </a>
     );
 };

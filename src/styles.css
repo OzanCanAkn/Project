@@ -23,7 +23,7 @@ body {
   rotate: 270deg;
 
   /* stylelint-disable-next-line function-no-unknown */
-  stroke: #0381FF;
+  stroke: theme('colors.action');
   stroke-dasharray: 173;
   stroke-dashoffset: 173;
   stroke-opacity: 1;

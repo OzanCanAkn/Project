@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        action: '#3B82F6',
+        action: '#0381FF',
+        ink: '#0B122A',
+        body: '#0B172A',
+        muted: '#666666',
       },
       screens: {
         'tablet': '768px',
