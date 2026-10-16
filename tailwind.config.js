@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -10,20 +10,12 @@ module.exports = {
         muted: '#666666',
       },
       screens: {
-        'tablet': '768px',
-        'desktop': '1024px',
-        'widescreen': '1400px',
-      },
-      breakpoints: {
-        'tablet': '768px',
-        'desktop': '1024px',
-        'widescreen': '1400px',
+        tablet: '768px',
+        desktop: '1024px',
+        widescreen: '1400px',
       },
       fontFamily: {
-        sans: [
-          '"SF Pro Display"',
-          'sans-serif',
-        ],
+        sans: ['"SF Pro Display"', 'sans-serif'],
       },
     },
   },

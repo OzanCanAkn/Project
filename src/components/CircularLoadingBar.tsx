@@ -9,7 +9,10 @@ type CircularLoadingBarProps = {
   children: ReactNode;
 };
 
-const CircularLoadingBar = ({ isActive, children }: CircularLoadingBarProps) => {
+const CircularLoadingBar = ({
+  isActive,
+  children,
+}: CircularLoadingBarProps) => {
   return (
     <div className="relative flex h-14 w-14 items-center justify-center">
       <svg

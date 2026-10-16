@@ -22,7 +22,6 @@ body {
   transform-origin: center;
   rotate: 270deg;
 
-  /* stylelint-disable-next-line function-no-unknown */
   stroke: theme('colors.action');
   stroke-dasharray: 173;
   stroke-dashoffset: 173;

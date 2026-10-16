@@ -1,3 +1,3 @@
 export interface PhoneSceneProps {
-    isSettled: boolean;
+  isSettled: boolean;
 }

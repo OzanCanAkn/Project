@@ -1,10 +1,7 @@
+import type { ComponentType } from 'react';
 import type { PhoneSceneProps } from '../types';
 
-//Added for future implementations in any case and for nice type declarations
-const DocumentScannerScene = ({ isSettled }: PhoneSceneProps) => {
-    if (!isSettled) return null;
-
-    return null;
-};
+// The scan frame and glow are part of the phone image, so this scene has no overlay.
+const DocumentScannerScene: ComponentType<PhoneSceneProps> = () => null;
 
 export default DocumentScannerScene;

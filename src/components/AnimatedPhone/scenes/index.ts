@@ -8,9 +8,9 @@ import ExportAndShareScene from './ExportAndShareScene';
 import SignAndStampScene from './SignAndStampScene';
 
 export const phoneScenes: Record<BannerId, ComponentType<PhoneSceneProps>> = {
-    documentScanner: DocumentScannerScene,
-    signAndStamp: SignAndStampScene,
-    batchScanning: BatchScanningScene,
-    advancedFilters: AdvancedFiltersScene,
-    exportAndShare: ExportAndShareScene,
+  documentScanner: DocumentScannerScene,
+  signAndStamp: SignAndStampScene,
+  batchScanning: BatchScanningScene,
+  advancedFilters: AdvancedFiltersScene,
+  exportAndShare: ExportAndShareScene,
 };

@@ -1,7 +1,7 @@
 import OutlineButton from './OutlineButton';
 
 const Buttons = {
-    OutlineButton,
-}
+  OutlineButton,
+};
 
 export default Buttons;
