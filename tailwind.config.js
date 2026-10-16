@@ -9,11 +9,6 @@ export default {
         body: '#0B172A',
         muted: '#666666',
       },
-      screens: {
-        tablet: '768px',
-        desktop: '1024px',
-        widescreen: '1400px',
-      },
       fontFamily: {
         sans: ['"SF Pro Display"', 'sans-serif'],
       },
