@@ -9,7 +9,7 @@ interface NavProps {
 
 const Nav = ({ navLinks, activeId, setActiveId }: NavProps) => {
   return (
-    <div className="lg:grid flex w-full items-center snap-x grid-cols-5 z-10 bg-white max-w-[100vw] max-lg:overflow-x-scroll overflow-y-hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <div className="xl:grid flex w-full items-center snap-x grid-cols-5 z-10 bg-white max-w-[100vw] max-xl:overflow-x-scroll overflow-y-hidden [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {navLinks.map((link, index) => (
         <NavItem
           key={link.id}
