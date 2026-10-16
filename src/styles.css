@@ -1,3 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-variation-settings: 'opsz' 28;
+  }
+}
+
 body {
   display: block;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 346;
+  }
+}
+
+.animate-feature-svg circle {
+  transform-origin: center;
+  rotate: 270deg;
+
+  /* stylelint-disable-next-line function-no-unknown */
+  stroke: #0381FF;
+  stroke-dasharray: 173;
+  stroke-dashoffset: 173;
+  stroke-opacity: 1;
+  stroke-width: 1px;
+
+  animation: dash 0.8s ease-in-out;
+  animation-fill-mode: forwards;
 }
