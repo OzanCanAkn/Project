@@ -1,12 +1,12 @@
 import type { BannerId } from './navLinks';
 
-interface HeroText {
+export interface HeroTextContent {
   title: string;
   subtitle: string;
   description: string;
 }
 
-const heroTexts: Record<BannerId, HeroText> = {
+const heroTexts: Record<BannerId, HeroTextContent> = {
   documentScanner: {
     title: 'DOCUMENT SCANNER',
     subtitle: 'Scan with Ease',

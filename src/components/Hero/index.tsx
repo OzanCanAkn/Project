@@ -13,9 +13,9 @@ const Hero = ({ activeId }: HeroProps) => {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="xl:px-16 px-2 flex flex-col lg:flex-row lg:!h-[613px] w-full items-center lg:items-end justify-evenly overflow-hidden">
+    <div className="xl:px-16 px-2 flex flex-col lg:flex-row lg:h-[613px] w-full items-center lg:items-end justify-evenly overflow-hidden">
       <AnimatedPhone bannerId={activeId} className="order-2 lg:order-1" />
-      <div className="grid !h-full order-1 lg:order-2">
+      <div className="grid h-full order-1 lg:order-2">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={activeId}
@@ -25,11 +25,7 @@ const Hero = ({ activeId }: HeroProps) => {
             exit={{ opacity: 0 }}
             transition={{ duration: shouldReduceMotion ? 0 : 0.3 }}
           >
-            <HeroText
-              title={heroText.title}
-              subtitle={heroText.subtitle}
-              description={heroText.description}
-            />
+            <HeroText {...heroText} />
           </motion.div>
         </AnimatePresence>
       </div>

@@ -4,10 +4,10 @@ const VIEWBOX_SIZE = 56;
 const CENTER = VIEWBOX_SIZE / 2;
 const RING_RADIUS = 173 / (2 * Math.PI);
 
-type CircularLoadingBarProps = {
+interface CircularLoadingBarProps {
   isActive: boolean;
   children: ReactNode;
-};
+}
 
 const CircularLoadingBar = ({
   isActive,

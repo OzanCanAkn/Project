@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react';
+
 interface OutlineButtonProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const OutlineButton = ({ children }: OutlineButtonProps) => {

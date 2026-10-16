@@ -19,13 +19,13 @@ const AnimatedPhone = ({ bannerId, className }: AnimatedPhoneProps) => {
   return (
     <div
       className={clsx(
-        'relative !h-[320px] aspect-[366/483] lg:!h-[520px]',
+        'relative h-[320px] aspect-[366/483] lg:h-[520px]',
         className,
       )}
     >
       <div
         className={clsx(
-          'absolute max-lg:-left-[78px] max-lg:-bottom-28 lg:relative lg:ml-12 aspect-[366/483] lg:scale-100 scale-[58%] !h-[520px]',
+          'absolute max-lg:-left-[78px] max-lg:-bottom-28 lg:relative lg:ml-12 aspect-[366/483] lg:scale-100 scale-[58%] h-[520px]',
         )}
       >
         <AnimatePresence>
